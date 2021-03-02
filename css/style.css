@@ -1,3 +1,9 @@
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
 /* CSS for All */
 *{
     margin: 0 0;
@@ -40,6 +46,10 @@ a{
 }
 a:hover{
     color: #ff4757;
+}
+
+.btn-action {
+    text-decoration: underline wavy #ff6b81;
 }
 
 .btn{

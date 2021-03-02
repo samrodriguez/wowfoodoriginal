@@ -1,9 +1,11 @@
 <?php
 
-class Category
+class Product
 {
     private $id;
     private $name;
+    private $price;
+    private $category;
     private $description;
     private $img;
 
@@ -11,13 +13,17 @@ class Category
      * Category constructor.
      * @param $id
      * @param $name
+     * @param $category
+     * @param $price
      * @param $description
      * @param $img
      */
-    public function __construct($id, $name, $description,$img)
+    public function __construct($id, $name, $category, $price, $description, $img)
     {
         $this->id = $id;
         $this->name = $name;
+        $this->category = $category;
+        $this->price = $price;
         $this->description = $description;
         $this->img = $img;
     }
@@ -57,6 +63,38 @@ class Category
     /**
      * @return mixed
      */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param mixed $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param mixed $category
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getDescription()
     {
         return $this->description;
@@ -85,6 +123,8 @@ class Category
     {
         $this->img = $img;
     }
+
+
 
 
 }

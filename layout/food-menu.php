@@ -4,6 +4,24 @@
     <div class="container">
         <h2 class="text-center">Food Menu</h2>
 
+        <?php $product = new ProductModel(); ?>
+        <?php foreach ($product->Listar() as $row):?>
+            <div class="food-menu-box">
+            <div class="food-menu-img">
+                <img src="images/<?php echo $row->getImg() ?>" alt="<?php echo $row->getName() ?>" class="img-responsive img-curve">
+            </div>
+            <div class="food-menu-desc">
+                <h4><?php echo $row->getName(); ?></h4>
+                <p class="food-price">$<?php echo $row->getPrice(); ?></p>
+                <p class="food-detail">
+                    <?php echo $row->getDescription(); ?>
+                </p>
+                <br>
+                <a href="order.php" class="btn btn-primary">Order Now</a>
+            </div>
+            </div>
+        <?php endforeach; ?>
+        <!--
         <div class="food-menu-box">
             <div class="food-menu-img">
                 <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
@@ -105,7 +123,7 @@
                 <a href="#" class="btn btn-primary">Order Now</a>
             </div>
         </div>
-
+        -->
         <div class="clearfix"></div>
     </div>
     <p class="text-center">

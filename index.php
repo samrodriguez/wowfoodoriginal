@@ -12,14 +12,14 @@
 
 <body>
     <!-- Navbar Section Starts Here -->
-    <?php include 'layout/header.php'; ?>
+    <?php include ('layout/header.php'); ?>
     <!-- Navbar Section Ends Here -->
 
     <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search text-center">
         <div class="container">
             
-            <form action="food-search.html" method="POST">
+            <form action="food-search.php" method="POST">
                 <input type="search" name="search" placeholder="Search for Food.." required>
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
@@ -29,7 +29,7 @@
     <!-- fOOD sEARCH Section Ends Here -->
 
     <!-- CAtegories Section Starts Here -->
-    <?php include 'layout/explore-food.php'; ?>
+    <?php include 'layout/explore-foods.php'; ?>
     <!-- Categories Section Ends Here -->
 
     <!-- fOOD MEnu Section Starts Here -->

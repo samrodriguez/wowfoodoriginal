@@ -154,7 +154,5 @@
     <!-- footer Section Starts Here -->
     <?php include 'layout/footer.php'; ?>
     <!-- footer Section Ends Here -->
-
-
 </body>
 </html>
